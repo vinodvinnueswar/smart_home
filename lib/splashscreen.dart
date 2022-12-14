@@ -8,12 +8,15 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Timer(Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 2), () {
       Navigator.pushAndRemoveUntil(
-          context, MaterialPageRoute(builder: (context) => Homepage()), (
+          context, MaterialPageRoute(builder: (context) => const Homepage()), (
           route) => false);
     }
     );
+
+
+
 
     return Scaffold(
       backgroundColor: Colors.orange[700],
